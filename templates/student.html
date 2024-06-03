@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Student Information</title>
+    <style>
+    body, h1, h2, h3, h4, h5 {
+        font-family: "Georgia", sans-serif;
+    }
+    ul {
+        list-style-type: none;
+        padding: 50;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: #0066cc;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .student-info {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .student-info p {
+        margin: 10px 0;
+    }
+    </style>
+</head>
+<body>
+    <h1>Student Information</h1>
+    <div class="student-info">
+        <p><strong>Name:</strong> {{ student.name }}</p>
+        <p><strong>Student ID:</strong> {{ student.roll_number }}</p>
+        <p><strong>Grade:</strong> {{ student.grade }}</p>
+    </div>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
